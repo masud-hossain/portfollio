@@ -1,0 +1,162 @@
+
+.login-component{
+    background: url(/src/Img/bgblur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header{
+    padding: 20px 0px;
+}
+.logo img{
+    width: 50px;
+}
+
+.header-menu ul{
+    list-style: none;
+}
+.header-menu ul li{
+    float: right;
+}
+.header-menu ul li a{
+    color: white;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0px 20px;
+}
+.header-menu ul li a:last-child{
+    padding-right: 0px;
+}
+
+.login-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  
+}
+.login{
+    padding: 0px 20px;
+}
+.login h3{
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: .5px 0px 5px black;
+}
+.login p{
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: white;
+    text-shadow: .5px 0px 5px black;
+}
+
+.form{
+    background: #0000008c;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 1px #00000096;
+    padding: 30px;
+}
+
+.login form input{
+    width: 100%;
+    margin: 5px 0px 25px 0px;
+    padding: 8px 10px;
+    outline: none;
+    border: .5px solid rgba(255, 255, 255, 0.531);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+.login form input::placeholder{
+    color: rgb(219, 200, 200);
+}
+
+
+.login form input[type="checkbox"]{
+    width: unset;
+    margin-bottom: 25px;
+    accent-color: transparent;
+}
+
+
+.login form input[type="submit"]{
+    width: 100%;
+    background-color: rgb(255 0 0 / 53%);
+    color: white;
+    font-weight: 600;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.forgot-link{
+    color: rgb(241, 206, 250);
+}
+
+
+footer{
+    padding: 20px 0px;
+    margin-top: auto;
+    background: #0000008c;
+}
+
+.hero-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-area h2{
+    font-size: 40px;
+    width: 100%;
+    color:rgb(0 183 255);
+}
+.hero-area h4{
+    width: 100%;
+    color:rgb(0 183 255);
+}
+
+.hero-area p{
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+
+/* Styles for mobile devices with screens up to 480px wide */
+@media only screen and (max-width: 480px) {
+    .hero-area {
+        display: none;
+    }
+    .login{
+        padding: 0px;
+    }
+    .login h3{
+        font-size: 20px;
+    }
+  }
+  
+/* Styles for tablet devices with screens between 481px and 768px wide */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+   
+    .login{
+        padding: 0px;
+    }
+
+    .login h3{
+        font-size: 25px;
+    }
+
+    .hero-area h2{
+        font-size: 25px;
+        width: 100%;
+        color:rgb(0 183 255);
+    }
+    
+  }
